@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CDN de font-awesome -->
+  <!-- CDN son las siglas para Content Delivery Network (Red de Distribución de Contenidos) y, tal como su nombre lo indica, se trata de una red de servidores encargada de distribuir contenidos en Internet de manera más rápida y eficiente gracias a una serie de POPs (Puntos de Presencia) situados alrededor del mundo. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <title>Mi portafolio</title>
+</head>
+
+<body>
+  <main>
+    <!--Este es mi encabezado-->
+    <header>
+      <!--Esta es mi barra de navegacion-->
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">PM<span>QG</span></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#portfolio">Portafolio</a></li>
+              <li><a href="#about">Acerca de</a></li>
+              <li><a href="#testimonials">Testimonios</a></li>
+              <li><a href="#contact">Contácto</a></li>
+              <li><a href="https://wa.me/+57312111111" target="_blank" class="active">WhatsApp</a></li>
+            </ul>
+          </div>
+          <!--Menu hamburguesa para insertar en pantalla pequeñas-->
+          <div class="hamburguer-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!--Aqui va el contenido para el header-->
+      <div class="header-content">
+        <div class="container grid-2">
+          <div class="column-1">
+            <!--Titulo Principal-->
+            <h1 class="header-title">Mauricio <span> Quiñones</span></h1>
+            <p class="text">Profesional con años de experiencia en el sector de la informática,
+              con una sólida formación en el área de Soporte Técnico. Capacitandome actualmente como
+              Desarrollador Web Full-Stack!.</p>
+            <!--Boton de descarga de hoja de vida-->
+            <a href="https://drive.google.com/file/d/16d8_8IPEtOkBMZGmqAauUgiWrHSwDT2p/view?usp=sharing"
+              target="_blank">
+              <button class="btn">Descargar CV</button>
+            </a>
+          </div>
+          <!--Imagen Principal para el header-->
+          <div class="column-2 image">
+            <img src="./img/puntos-de-círculos-de-7x7.jpg" alt="imagen" class="points points2">
+            <img src="./img/foto mauro.png" alt="Mauricio Quiñones" class="img-element z-index">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Sección de servicios-->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title">Servicios</h3>
+          <p class="text">Soporte Técnico en Sistemas, Diseño y Desarrollo Web</p>
+        </div>
+        <div class="cards">
+          <div class="card-wrap">
+            <div class="card" data-card="Support">
+              <div class="card-content z-index">
+                <img src="./img/otros/soporte tecnico.png" alt="icono de Support" class="icon">
+                <h3 class="title-sm">Soporte Técnico en Sistemas</h3>
+                <p class="text">Diagnóstico y solución de los problemas que pueda tener tú computador a nivel de
+                  Software y Hardware. Eliminación de virus, realización de copia de datos (Backups).Instalación del Sistema Operativo
+                  Windows y los programas que necesites, asesoramiento en la compra del computador de acuerdo a tus necesidades, entre otros.
+                </p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="UI/UX">
+              <div class="card-content z-index">
+                <img src="./img/otros/diseño-web.jpg" alt="icono de Diseño Web" class="icon">
+                <h3 class="title-sm">Diseño Web</h3>
+                <p class="text">Apasionado por transformar ideas en experiencias visuales impactantes. 
+                  Mi enfoque en el diseño web se centra en la creatividad, la usabilidad y la estética, 
+                  con el objetivo de cautivar a la audiencia y mejorar la presencia digital de mis clientes.</p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-wrap">
+            <div class="card" data-card="Code">
+              <div class="card-content z-index">
+                <img src="./img/otros/html-css-javascript-logo-png-transparent.png" alt="icono de lenguajes"
+                  class="icon">
+                <h3 class="title-sm">Desarrollo Web</h3>
+                <p class="text">Constructor digital comprometido con convertir conceptos en soluciones web funcionales.
+                  Mi enfoque en el desarrollo web abarca desde sitios estáticos hasta aplicaciones dinámicas, garantizando un
+                   rendimiento óptimo y una experiencia del usuario sin problemas.
+                </p>
+                <a href="#" class="btn small">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Mis proyectos-->
+    <section class="portfolio section" id="portfolio">
+      <div class="background-bg"></div>
+
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Conoce mi trabajo!">Portafolio</h3>
+        </div>
+
+        <div class="section-body">
+          <div class="filter button-group">
+            <button class="filter-btn active" data-filter="*">Todo</button>
+            <button class="filter-btn" data-filter=".webdev">WEB</button>
+            <button class="filter-btn" data-filter=".ui">Soporte</button>
+          </div>
+
+          <div class="grid">
+            <div class="grid-item logo-design">
+              <div class="gallery-image">
+                <img src="./img/portfolio/cocacola2.png" alt="">
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Coca-Cola</h3>
+                    <h5>Ver Demo</h5>
+                    <a href="./Coca-Cola/indexCola.html" target="_blank">Enlace</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui">
+              <div class="gallery-image">
+                <img src="./img/portfolio/moto3.jpg" alt="">
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h3>Solo Motos</h3>
+                    <h5>Ver Demo</h5>
+                    <a href="./Solo Motos/SOLO MOTOS.HTML" target="_blank">Enlace</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item ui webdev">
+              <div class="gallery-image">
+                <img src="./img/portfolio/soporte tech.jpg" alt="">
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description"></div>
+                  <h3>Soporte</h3>
+                  <h5>Ver Demo</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!--Sección Testimonios-->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Qué opinan de mí?">Testimonios</h3>
+        </div>
+
+        <div class="testi-content grid-2">
+          <div class="column-1 reviews">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-test"> Encantada con el gran trabajo que realizó con el diseño de mi pagina web. Es
+                    una persona
+                    realmente comprometida con su trabajo y siempre atento a nuestras necesidades, totalmente
+                    recomendado!!!
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Carmen Gil</h3>
+                    <h5 class="review-job">Gerente General Coca-Cola, Bogotá-Colombia</h5>
+                  </div>
+                </div>
+
+                <div class="swiper-slide review">
+                  <i class="fas fa-quote-left quote"></i>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+
+                  <p class="review-test"> Totalmente satisfecho con el trabajo del Ing. Quiñones, la verdad superó mis
+                    espectativas con el
+                    trabajo encargado. En todo momento estuvo atento hasta el más minimo detalle en el diseño y
+                    desarrollo de la pagina de
+                    la compañia, acaba de ganarse otro cliente, mis mas sinceras felicitaciones!!!
+                  </p>
+
+                  <div class="review-info">
+                    <h3 class="review-name">Pedro Nel Quiñones</h3>
+                    <h5 class="review-job">Gerente General Kawasaki, Cali-Colombia</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-nav swiper-button-prev">
+                <i class="fas fa-long-arrow-alt-left"></i>
+              </div>
+
+              <div class="review-nav swiper swiper-button-next">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="column-2 image">
+            <img src="./img/portfolio/mano- estrella.png" alt="" class="img-element">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Acerca de mi-->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="title" data-title="Quien soy yo">Acerca de mi</h3>
+        </div>
+
+        <div class="section-body grid-2">
+          <div class="column-1">
+            <h3 class="title-sm">Hola, yo soy...</h3>
+            <p class="text">Una persona con una personalidad muy alegre, apasionado por las cosas que realmente me
+              atrapan, soy muy respetuoso
+              y de esa misma forma me gusta exigir respeto. Mi familia es la base de todo y me encanta poder compartir
+              con ellos. Cuando se da
+              la oportunidad me gusta encontrarme con mis amigos y relajarnos para hablar de todo un poco. En el
+              ambiente laboral me gusta trabajar
+              en equipo, poder ayudar a mis compañeros de trabajo y aprender lo que mas pueda de ellos.
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="skill soporte">
+            <h3 class="skill-title">Soporte Técnico</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="90%"></div>
+            </div>
+          </div>
+          <div class="skill html">
+            <h3 class="skill-title">HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="20%"></div>
+            </div>
+          </div>
+          <div class="skill css">
+            <h3 class="skill-title">CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="10%"></div>
+            </div>
+          </div>
+          <div class="skill js">
+            <h3 class="skill-title">JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-progress" data-progress="10%"></div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="column-2 image">
+        <img src="./img/portfolio/4291099.jpg" alt="" class="z-index">
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!--Aqui va el ponte en contacto-->
+    <section class="contact" id="contact">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63723.1203770009!2d-76.5526016!3d3.424256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1702948104012!5m2!1ses-419!2sco"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <h3 class="title">Ponte en contacto</h3>
+            <p class="text">No lo dudes, contáctame para que hagamos realidad tus sueños y le des el impulso que tu
+              empresa necesita!</p>
+            <div class="information-wrap">
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p class="info-text">Cali. Colombia</p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+                <p class="info-text">pmq244@gmail.com </p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <p class="info-text">330 333 2222</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <h3 class="title">Contáctame</h3>
+            <div class="row">
+              <input type="text" class="contact-input" placeholder="Ingresa tu Nombre" name="nombre">
+              <input type="text" class="contact-input" placeholder="Ingresa tu Apellido" name="apellido">
+            </div>
+
+            <div class="row">
+              <input type="number" class="contact-input" placeholder="Celular" name="celular">
+              <input type="email" class="contact-input" placeholder="E-mail" required name="email">
+            </div>
+
+            <div class="row">
+              <textarea cols="30" rows="10" placeholder="Mensaje" class="contact-input textarea"
+                name="mensaje"></textarea>
+            </div>
+            <a href="#" class="btn">Enviar</a>
+
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="hireme" id="hireme">
+      <div class="container">
+        <h3 class="title">Y tú, que proyectos tienes?</h3>
+        <p class="text">
+          Hablemos de los proyectos que quieres realizar y hagamoslos realidad, ya es tiempo de pasar a la acción!!!
+         </p>
+        <a href="htpps://wa.me/+573201234567" target="_blank" class="btn">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección pie de página -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-4">
+          <div class="grid-4-col footer-about">
+            <h3 class="title-sm">Acerca de</h3>
+            <p class="text">
+              No te quedes sin visitar nuestros enlaces, en ellos encontraras mas información que te pueda interesar.
+            </p>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Links</h3>
+            <ul>
+              <li>
+                <a href="#services">Servicios</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portafolio</a>
+              </li>
+              <li>
+                <a href="#about">Acerca de</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonios</a>
+              </li>
+              <li>
+                <a href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-links">
+            <h3 class="title-sm">Servicios</h3>
+            <ul>
+              <li>
+                <a href="#">Diseño WEB</a>
+              </li>
+              <li>
+                <a href="#">Desarrollo WEB</a>
+              </li>
+              <li>
+                <a href="#">Soporte Técnico</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-4-col footer-newstletter">
+            <h3 class="title-sm">Suscríbete</h3>
+            <p class="text">
+              Suscríbete y no te quedes sin recibir información que te puede interesar y ademas obtendras más beneficios!!!
+            </p>
+            <div class="footer-input-wrap">
+              <input type="email" class="footer-input" placeholder="Email" />
+              <a href="#" class="input-arrow">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2023 | Hecho por
+              <a href="#" class="split-text"> PMQG Solutions </a>
+            </p>
+          </div>
+
+          <div class="followme-wrap">
+            <div class="followme">
+              <h3>Sígueme</h3>
+              <span class="footer-line"></span>
+              <div class="social-media">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="back-btn-wrap">
+              <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
